@@ -1,0 +1,2303 @@
+{
+    "item": [
+        {
+            "id": "77180e4d-7e4c-42a3-ae4a-39ede1604ec1",
+            "name": "VAmPI home",
+            "request": {
+                "name": "VAmPI home",
+                "description": {
+                    "content": "VAmPI is a vulnerable on purpose API. It was created in order to evaluate the efficiency of third party tools in identifying vulnerabilities in APIs but it can also be used in learning/teaching purposes.",
+                    "type": "text/plain"
+                },
+                "url": {
+                    "path": [
+                        ""
+                    ],
+                    "host": [
+                        "{{baseUrl}}"
+                    ],
+                    "query": [],
+                    "variable": []
+                },
+                "method": "GET",
+                "auth": null
+            },
+            "response": [
+                {
+                    "id": "8d352424-c135-45aa-8ccb-899c24b9d16b",
+                    "name": "Home - Help",
+                    "originalRequest": {
+                        "url": {
+                            "path": [
+                                ""
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "body": {}
+                    },
+                    "status": "OK",
+                    "code": 200,
+                    "header": [
+                        {
+                            "key": "Content-Type",
+                            "value": "text/plain"
+                        }
+                    ],
+                    "body": "",
+                    "cookie": [],
+                    "_postman_previewlanguage": "text"
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "682e117d-2917-4d06-8953-40e688e51d82",
+            "name": "users/v1",
+            "item": [
+                {
+                    "id": "eb36f78c-44af-4bda-aeb4-c5f3be460b6a",
+                    "name": "Retrieves all users",
+                    "request": {
+                        "name": "Retrieves all users",
+                        "description": {
+                            "content": "Displays all users with basic information",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "users",
+                                "v1"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "0864cae5-c5a4-495a-8824-f7512b3dad52",
+                            "name": "See basic info about all users",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "2ca60c90-1e53-49cc-8b60-f316b7f078ee",
+                    "name": "Retrieves all details for all users",
+                    "request": {
+                        "name": "Retrieves all details for all users",
+                        "description": {
+                            "content": "Displays all details for all users",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "users",
+                                "v1",
+                                "_debug"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "d1539418-78cd-4522-b6da-3742df46dda8",
+                            "name": "See all details of the users",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "_debug"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "c4b7c5b1-68bd-4b04-95fc-2b59bea853b7",
+                    "name": "Register new user",
+                    "request": {
+                        "name": "Register new user",
+                        "description": {
+                            "content": "Register new user",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "users",
+                                "v1",
+                                "register"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\",\n    \"email\": \"<string>\"\n}"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "8c3676ca-32f1-45c8-9098-8dcf10c41c50",
+                            "name": "Sucessfully created user",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "register"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\",\n    \"email\": \"<string>\"\n}"
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "d7082829-6037-49ff-b5f3-9f1944d5da33",
+                            "name": "Invalid request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "register"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\",\n    \"email\": \"<string>\"\n}"
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "aff46c9c-614d-4e16-a636-56fd691d6658",
+                    "name": "Login to VAmPI",
+                    "request": {
+                        "name": "Login to VAmPI",
+                        "description": {
+                            "content": "Login to VAmPI",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "users",
+                                "v1",
+                                "login"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "79dd094e-331a-42b2-99e3-af8424f3001c",
+                            "name": "Sucessfully logged in user",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "login"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "4d3091be-ce15-41f2-b19b-84ebe0d1ac8c",
+                            "name": "Invalid request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "login"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"username\": \"<string>\",\n    \"password\": \"<string>\"\n}"
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "eb576524-6af4-4156-b236-d2b2daf6829d",
+                    "name": "Login to VAmPI",
+                    "request": {
+                        "name": "Login to VAmPI",
+                        "description": {
+                            "content": "Login to VAmPI",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "users",
+                                "v1",
+                                "loginUser",
+                                ":username",
+                                ":password"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "username",
+                                    "description": "(Required) "
+                                },
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "password",
+                                    "description": "(Required) "
+                                }
+                            ]
+                        },
+                        "method": "POST",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "054ce9d2-a03a-4cd5-ab43-59f0bb7a4fac",
+                            "name": "Sucessfully logged in user",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "loginUser",
+                                        ":username",
+                                        ":password"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "username"
+                                        },
+                                        {
+                                            "type": "any",
+                                            "key": "password"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "b53f5ae8-ac1a-43a6-9307-9e861777cef7",
+                            "name": "Invalid request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        "loginUser",
+                                        ":username",
+                                        ":password"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "username"
+                                        },
+                                        {
+                                            "type": "any",
+                                            "key": "password"
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "body": {}
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "4045ff5c-e535-4f5d-afc1-f583de0cd56b",
+                    "name": "{username}",
+                    "item": [
+                        {
+                            "id": "3131bfe0-674b-48ea-b877-591c11f18795",
+                            "name": "Retrieves user by username",
+                            "request": {
+                                "name": "Retrieves user by username",
+                                "description": {
+                                    "content": "Displays user by username",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        ":username"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "username",
+                                            "description": "(Required) retrieve username data"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "40488d42-e3ca-40de-bb66-77a4c5c64ac8",
+                                    "name": "Successfully display user info",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "body": "[\n {\n  \"email\": \"email\",\n  \"username\": \"username\"\n },\n {\n  \"email\": \"email\",\n  \"username\": \"username\"\n }\n]",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "608196f4-0772-485e-b3ed-2478f4c9cdd9",
+                                    "name": "User not found",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Not Found",
+                                    "code": 404,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "4377f478-dc4f-4e6a-977f-177580480334",
+                            "name": "Deletes user by username",
+                            "request": {
+                                "name": "Deletes user by username",
+                                "description": {
+                                    "content": "Deletes user by username",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        ":username"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "username",
+                                            "description": "(Required) Delete username"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "0ff54dba-73d9-4323-89f4-5622ae7fa577",
+                                    "name": "Sucessfully deleted user",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "2ad4e31c-92cd-4dfe-b80a-273b719c12d0",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "8705c66a-9379-4d13-8155-4bc4153efc1e",
+                                    "name": "User not found",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "Not Found",
+                                    "code": 404,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "c363111b-9ca2-4d2f-9188-b38b0f19ea9d",
+                            "name": "Update users email or password",
+                            "request": {
+                                "name": "Update users email or password",
+                                "description": {
+                                    "content": "Update a single users email or password",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "users",
+                                        "v1",
+                                        ":username",
+                                        ""
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "username",
+                                            "description": "(Required) username to update email"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "PUT",
+                                "auth": null,
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"email\": \"<string>\"\n}"
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "aee19b01-0185-489a-9697-d6db5bd69f5e",
+                                    "name": "Sucessfully updated user",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username",
+                                                ""
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"email\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "412a7dc2-8615-488c-ac62-a01d70a1b398",
+                                    "name": "Invalid request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username",
+                                                ""
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"email\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "7961c789-a370-4896-84e2-c9f7b69a0d2a",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "users",
+                                                "v1",
+                                                ":username",
+                                                ""
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "username"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"email\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        },
+        {
+            "id": "ecdeb2d3-8aad-4646-b107-64d84e81bdc1",
+            "name": "books/v1",
+            "item": [
+                {
+                    "id": "91e28a28-2f37-4824-ba3f-ed79d6d928df",
+                    "name": "Retrieves all books",
+                    "request": {
+                        "name": "Retrieves all books",
+                        "description": {
+                            "content": "Retrieves all books",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "books",
+                                "v1"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "4e214391-f244-404c-8d04-1fdf55c604ad",
+                            "name": "See all books",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "097cfaaa-2874-48b1-88f4-5b04e58acbd3",
+                    "name": "Add new book",
+                    "request": {
+                        "name": "Add new book",
+                        "description": {
+                            "content": "Add new book",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "books",
+                                "v1"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            }
+                        ],
+                        "method": "POST",
+                        "auth": null,
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\n    \"book_code\": \"<integer>\"\n}"
+                        }
+                    },
+                    "response": [
+                        {
+                            "id": "4136123b-42c7-4aca-b9dd-1593b2bf59f9",
+                            "name": "Sucessfully added a book",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_code\": \"<integer>\"\n}"
+                                }
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "c761f1b4-3ddc-44e0-9b4c-ec800bd5e299",
+                            "name": "Invalid request",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_code\": \"<integer>\"\n}"
+                                }
+                            },
+                            "status": "Bad Request",
+                            "code": 400,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "8ce31918-384e-4501-b5cc-eaa832fa5528",
+                            "name": "User not authorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": []
+                                },
+                                "method": "POST",
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_code\": \"<integer>\"\n}"
+                                }
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "aa46f6a4-bba2-42ae-9cb3-bab37c955e4e",
+                    "name": "{book title}",
+                    "item": [
+                        {
+                            "id": "a5fcb3e5-f373-42b4-8cf5-08b8cb0c2a7b",
+                            "name": "Add new book",
+                            "request": {
+                                "name": "Add new book",
+                                "description": {
+                                    "content": "Add a new book",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":book_title",
+                                        ":book_description",
+                                        ":book_code"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "book_title",
+                                            "description": "(Required) "
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "book_description",
+                                            "description": "(Required) "
+                                        },
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<integer>",
+                                            "key": "book_code",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                },
+                                "method": "POST",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "cb554a34-8917-4a5c-a02d-5b4ab2a20086",
+                                    "name": "Sucessfully added a book",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                ":book_description",
+                                                ":book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_description"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_code"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {}
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "6b61bc8a-e578-477e-9b55-68a937b7ed8d",
+                                    "name": "Invalid request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                ":book_description",
+                                                ":book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_description"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_code"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {}
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "576859f3-8a1f-431a-8a73-023648cb70e7",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                ":book_description",
+                                                ":book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_description"
+                                                },
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_code"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {}
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "9b00af2e-c0ec-48f6-9158-50df9bf60e75",
+                            "name": "Add new book",
+                            "request": {
+                                "name": "Add new book",
+                                "description": {
+                                    "content": "Add a new book",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":book_title",
+                                        "book_description",
+                                        "book_code"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<string>",
+                                            "key": "book_title",
+                                            "description": "(Required) "
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "POST",
+                                "auth": null,
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "aa6abddb-22ff-48e6-b50b-2c2ffc74a75c",
+                                    "name": "Sucessfully added a book",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                "book_description",
+                                                "book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "8e417b41-b7bb-4f6a-b4c3-ab062c400d22",
+                                    "name": "Invalid request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                "book_description",
+                                                "book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "d881ec00-38b3-408f-960d-a8d2bbb6717e",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":book_title",
+                                                "book_description",
+                                                "book_code"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "book_title"
+                                                }
+                                            ]
+                                        },
+                                        "method": "POST",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "d242d8cc-4b9a-418e-bea5-fecfc2ec5241",
+                    "name": "Retrieves book by title",
+                    "request": {
+                        "name": "Retrieves book by title",
+                        "description": {
+                            "content": "Retrieves book by title",
+                            "type": "text/plain"
+                        },
+                        "url": {
+                            "path": [
+                                "books",
+                                "v1",
+                                ":book"
+                            ],
+                            "host": [
+                                "{{baseUrl}}"
+                            ],
+                            "query": [],
+                            "variable": [
+                                {
+                                    "disabled": false,
+                                    "type": "any",
+                                    "value": "<string>",
+                                    "key": "book",
+                                    "description": "(Required) retrieve book data"
+                                }
+                            ]
+                        },
+                        "method": "GET",
+                        "auth": null
+                    },
+                    "response": [
+                        {
+                            "id": "09031f9e-014f-4e81-9055-346720945e85",
+                            "name": "Successfully retrieve book info",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":book"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "book"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "OK",
+                            "code": 200,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "application/json"
+                                }
+                            ],
+                            "body": "{\n \"book_title\": \"occaecat ad ea irure dolore\",\n \"book_description\": \"minim veniam nisi qui\",\n \"book_code\": -78816676\n}",
+                            "cookie": [],
+                            "_postman_previewlanguage": "json"
+                        },
+                        {
+                            "id": "2aa9f42a-fc39-425e-b6a6-5294d14392ed",
+                            "name": "User not authorized",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":book"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "book"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Unauthorized",
+                            "code": 401,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        },
+                        {
+                            "id": "1ac627bb-ded6-46c6-8329-d09b99100a2f",
+                            "name": "Book not found",
+                            "originalRequest": {
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":book"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "type": "any",
+                                            "key": "book"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "body": {}
+                            },
+                            "status": "Not Found",
+                            "code": 404,
+                            "header": [
+                                {
+                                    "key": "Content-Type",
+                                    "value": "text/plain"
+                                }
+                            ],
+                            "body": "",
+                            "cookie": [],
+                            "_postman_previewlanguage": "text"
+                        }
+                    ],
+                    "event": []
+                },
+                {
+                    "id": "afa5b5a1-783a-47fe-95e0-90e013d389fe",
+                    "name": "{id}",
+                    "item": [
+                        {
+                            "id": "9a4bf1b1-0bee-46d4-a125-518acff0c243",
+                            "name": "Retrieves book by id",
+                            "request": {
+                                "name": "Retrieves book by id",
+                                "description": {
+                                    "content": "Retrieves book by id",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":id"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<integer>",
+                                            "key": "id",
+                                            "description": "(Required) retrieve book data"
+                                        }
+                                    ]
+                                },
+                                "method": "GET",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "e801cade-b571-442a-abd4-c7d4fa22585e",
+                                    "name": "Successfully retrieve book info",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "application/json"
+                                        }
+                                    ],
+                                    "body": "{\n \"book_title\": \"occaecat ad ea irure dolore\",\n \"book_description\": \"minim veniam nisi qui\",\n \"book_code\": -78816676\n}",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "json"
+                                },
+                                {
+                                    "id": "b40a0edf-eedb-4513-a3c5-b2b48342cfcf",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "9dc97385-d899-42de-9c9a-eb9baa84b33b",
+                                    "name": "Book not found",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "GET",
+                                        "body": {}
+                                    },
+                                    "status": "Not Found",
+                                    "code": 404,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "17606aa6-f372-488c-96a1-7b09b5f221b7",
+                            "name": "Deletes book by id",
+                            "request": {
+                                "name": "Deletes book by id",
+                                "description": {
+                                    "content": "Deletes book by id",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":id"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<integer>",
+                                            "key": "id",
+                                            "description": "(Required) Delete book"
+                                        }
+                                    ]
+                                },
+                                "method": "DELETE",
+                                "auth": null
+                            },
+                            "response": [
+                                {
+                                    "id": "087562ee-75ce-4f76-9cd6-a79b0650f558",
+                                    "name": "Sucessfully deleted book",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "OK",
+                                    "code": 200,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "6dec5ee0-3acd-4d2f-9240-e7b429e8de66",
+                                    "name": "Book not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "cad90eeb-afe7-4649-a4c3-30a5c5836ecb",
+                                    "name": "book not found",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "DELETE",
+                                        "body": {}
+                                    },
+                                    "status": "Not Found",
+                                    "code": 404,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "9ee89d71-8776-49d4-bbd6-2a64460c2252",
+                            "name": "Update books title and description or code",
+                            "request": {
+                                "name": "Update books title and description or code",
+                                "description": {
+                                    "content": "Update books title and description or code",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":id"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<integer>",
+                                            "key": "id",
+                                            "description": "(Required) id to update title and description or code or all"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "PUT",
+                                "auth": null,
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\"\n}"
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "fef076c1-c933-49f7-9258-d3da8249886d",
+                                    "name": "Sucessfully updated",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "1bb75d41-8552-44d2-88cb-bd7cc525ba9f",
+                                    "name": "Invalid request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "3478efe4-a407-4034-9453-d3bf2793938d",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\"\n}"
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        },
+                        {
+                            "id": "175adf92-09cb-4c65-822a-b598797afc2c",
+                            "name": "Update books title and description and code",
+                            "request": {
+                                "name": "Update books title and description and code",
+                                "description": {
+                                    "content": "Update books title and description and code",
+                                    "type": "text/plain"
+                                },
+                                "url": {
+                                    "path": [
+                                        "books",
+                                        "v1",
+                                        ":id",
+                                        "all"
+                                    ],
+                                    "host": [
+                                        "{{baseUrl}}"
+                                    ],
+                                    "query": [],
+                                    "variable": [
+                                        {
+                                            "disabled": false,
+                                            "type": "any",
+                                            "value": "<integer>",
+                                            "key": "id",
+                                            "description": "(Required) id to update title and description"
+                                        }
+                                    ]
+                                },
+                                "header": [
+                                    {
+                                        "key": "Content-Type",
+                                        "value": "application/json"
+                                    }
+                                ],
+                                "method": "PUT",
+                                "auth": null,
+                                "body": {
+                                    "mode": "raw",
+                                    "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                }
+                            },
+                            "response": [
+                                {
+                                    "id": "42b8b736-87b7-493c-a45c-f28262800345",
+                                    "name": "Sucessfully updated books title and description and code",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id",
+                                                "all"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "No Content",
+                                    "code": 204,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "abf527ae-b5aa-4d05-adbe-da5915700f23",
+                                    "name": "Invalid request",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id",
+                                                "all"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "Bad Request",
+                                    "code": 400,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                },
+                                {
+                                    "id": "34e7e72a-6ccd-472e-b497-8128a2f72663",
+                                    "name": "User not authorized",
+                                    "originalRequest": {
+                                        "url": {
+                                            "path": [
+                                                "books",
+                                                "v1",
+                                                ":id",
+                                                "all"
+                                            ],
+                                            "host": [
+                                                "{{baseUrl}}"
+                                            ],
+                                            "query": [],
+                                            "variable": [
+                                                {
+                                                    "type": "any",
+                                                    "key": "id"
+                                                }
+                                            ]
+                                        },
+                                        "method": "PUT",
+                                        "body": {
+                                            "mode": "raw",
+                                            "raw": "{\n    \"book_title\": \"<string>\",\n    \"book_description\": \"<string>\",\n    \"book_code\": \"<integer>\"\n}"
+                                        }
+                                    },
+                                    "status": "Unauthorized",
+                                    "code": 401,
+                                    "header": [
+                                        {
+                                            "key": "Content-Type",
+                                            "value": "text/plain"
+                                        }
+                                    ],
+                                    "body": "",
+                                    "cookie": [],
+                                    "_postman_previewlanguage": "text"
+                                }
+                            ],
+                            "event": []
+                        }
+                    ],
+                    "event": []
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [
+        {
+            "type": "string",
+            "value": "http://localhost:5000",
+            "key": "baseUrl"
+        }
+    ],
+    "info": {
+        "_postman_id": "bd150a35-63b1-4c41-9cef-3971c9968cb0",
+        "name": "VAmPI",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+        "description": {
+            "content": "OpenAPI v3 specs for VAmPI",
+            "type": "text/plain"
+        }
+    }
+}

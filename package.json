@@ -1,0 +1,28 @@
+{
+  "name": "bpowasp-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@grpc/grpc-js": "^1.2.0",
+    "@grpc/proto-loader": "^0.5.5",
+    "bcrypt": "^5.0.0",
+    "dotenv": "^8.2.0",
+    "fs": "0.0.1-security",
+    "google-protobuf": "^3.14.0-rc.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.6.3",
+    "openapi-to-postmanv2": "^2.10.1",
+    "swagger2-to-postmanv2": "^2.0.1",
+    "swagger2openapi": "^7.0.8"
+  },
+  "devDependencies": {
+    "eslint": "^7.32.0"
+  }
+}

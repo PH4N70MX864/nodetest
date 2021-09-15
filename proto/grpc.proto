@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+service Postman {
+      rpc convertFile(PostmanServiceRequest) returns (PostmanServiceResponse);
+}
+
+message PostmanServiceRequest {
+      bytes InputFile = 1;
+}
+
+message PostmanServiceResponse {
+      bytes OutputFile = 1;
+}
